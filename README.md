@@ -29,6 +29,9 @@ https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Pas
 
 To Github pages at: https://lhardywilcox.github.io/module-3-password-generator/
 
+## License
+
+MIT License
 
 ## Credits
 
