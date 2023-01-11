@@ -34,16 +34,16 @@ function generatePassword(userUpper, userLower, userNum) {
     passChar = upCase.concat(lowCase);
   } else if (userUpper === 'y' && userLower === 'n' && userNum === 'y') {
     passChar = upCase.concat(numChar);
-    /*} else if (userUpper === 'n' && userLower === 'y' && userNum === 'y') {
+  } else if (userUpper === 'n' && userLower === 'y' && userNum === 'y') {
     passChar = lowCase.concat(numChar);
-    } else if (userUpper === 'y' && userLower === 'n' && userNum === 'n') {
-    passChar = userUpper;
-    } else if (userUpper === 'n' && userLower === 'y' && userNum === 'n') {
-    passChar = userLower;
-    } else if (userUpper === 'n' && userLower === 'n' && userNum === 'y') {
-    passChar = userNum;
-    } else {
-      return; */
+  } else if (userUpper === 'y' && userLower === 'n' && userNum === 'n') {
+    passChar = upCase;
+  } else if (userUpper === 'n' && userLower === 'y' && userNum === 'n') {
+    passChar = lowCase;
+  } else if (userUpper === 'n' && userLower === 'n' && userNum === 'y') {
+    passChar = numChar;
+  } else {
+    return;
   };
 
   console.log(passChar); //Logs character set for password. Correct.
