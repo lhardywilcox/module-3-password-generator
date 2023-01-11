@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 var textbox = document.querySelector("#password");
 // Add event listener to generate button
 generateBtn.addEventListener("click", generatePassword);
-
+// Function to generate the password.
 function generatePassword(userUpper, userLower, userNum) {
   var lowCase = 'abcdefghijklmnopqrstuvwxyz';
   var upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -22,10 +22,12 @@ function generatePassword(userUpper, userLower, userNum) {
 
   var userNum = prompt("Would you like to use numeric characters?", "Y or N");
   userNum = userNum.toLowerCase();
-
+  // Logged variables to confirm user input
   console.log(userUpper);
   console.log(userLower);
   console.log(userNum);
+  // Reset the textbox to an empty string after no characters were chosen
+  textbox.textContent = "";
 
   //Concat strings of password characters based on user input from prompts
   if (userUpper === 'y' && userLower === 'y' && userNum === 'y') {
@@ -43,13 +45,13 @@ function generatePassword(userUpper, userLower, userNum) {
   } else if (userUpper === 'n' && userLower === 'n' && userNum === 'y') {
     passChar = numChar;
   } else {
+    alert("It's easier to create a password if you select some characters! Please start again.");
     return;
   };
 
-  console.log(passChar); //Logs character set for password. Correct.
-
-  console.log(getPassword(passLength));//Logs random password creation. Correct.
-  textbox.textContent = getPassword(passLength);
+  console.log(passChar); //Used to confirm correct character set is generated.
+  console.log(getPassword(passLength));//Used to confirm random password is generated with correct character set.
+  textbox.textContent = getPassword(passLength); //Sends password to textbox.
 
   function getPassword() {
     var password = "";
