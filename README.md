@@ -12,7 +12,17 @@ To start the generator, click on the red Generate Password button.  Follow the p
 
 Screenshots:
 
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%201.png
 
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%202.png
+
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%203.png
+
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%204.png
+
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%205.png
+
+https://github.com/lhardywilcox/module-3-password-generator/blob/main/Assets/Password%20Generator%206.png
 
 
 ## Deployment
