@@ -6,9 +6,9 @@ var textbox = document.querySelector("#password");
 generateBtn.addEventListener("click", generatePassword);
 
 function generatePassword(userUpper, userLower, userNum) {
-  var lowCase = 'abcdefg';
-  var upCase = 'ABCDEFG';
-  var numChar = '123456789';
+  var lowCase = 'abcdefghijklmnopqrstuvwxyz';
+  var upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var numChar = '0123456789';
 
   var userLength = prompt("Please enter the length of your password.", "8 to 128 characters");
   passLength = parseFloat(userLength);
